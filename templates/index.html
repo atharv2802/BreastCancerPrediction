@@ -22,15 +22,16 @@
 		<div class="wrap-contact100">
 			<form action="/predict" class="contact100-form validate-form" method="post">
 				<span class="contact100-form-title">
-					<h2>CANCER PREDICTION</h2>
+					<h1>CANCER PREDICTION</h1>
         </span>
-        <span id="result">
-        <br>{{ prediction_text }}<br>
-        </span>
+        <span style="text-align:center; font-size:2rem; color:#175385;"><h3>
+        Result : {{ prediction_text }}<br>
+        </h3></span>
         <span>
         <br>
-            <h4 style="color:Tomato;"> Malignant(1):<br> It means there are high chances of the patient having CANCER!</h4>
-            <br><h4 style="color:DodgerBlue;"> Benign(0):<br> It means the patient has no significant sign of having CANCER!</h4>
+            <h3>Note :<br></h3>
+            <h4 style="color:Tomato;"> [1] : Malignant:<br> It means there are high chances of the patient having CANCER!</h4>
+            <br><h4 style="color:DodgerBlue;">[0] : Benign:<br> It means the patient has no significant sign of having CANCER!</h4>
         </span>
         
         <span class="contact100-form-title"><h5></h5></span>
