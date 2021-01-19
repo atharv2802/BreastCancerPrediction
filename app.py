@@ -21,7 +21,7 @@ def predict():
     final_features = [np.array(int_features)]
     prediction = model.predict(final_features)
     return render_template('index.html', 
-                           prediction_text='Patient Has {} Cancer'.format(prediction))
+                            prediction_text='Result : Patient Has {} Cancer'.format(prediction))
 
 if __name__ == "__main__":
     app.run(debug=True)
